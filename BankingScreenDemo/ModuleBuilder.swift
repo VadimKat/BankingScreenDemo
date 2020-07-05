@@ -20,8 +20,10 @@ class ModelBuilder: Builder {
         let payment3 = Payment(paymentNumber: 3, paymentDate: date, paymentCompletion: false)
         let paymentsArray: [Payment] = [payment1, payment2, payment3]
         let model = PaymentsModel(orderNumber: 1, currentStateDate: date, orderTotal: 1000, payed: 200, completed: 500, payedByCustomer: 700, toBePayed: 300, payments: paymentsArray)
+        var paymentsModelsArray: [PaymentsModel] = []
+        paymentsModelsArray.append(model)
         let view = PaymentsViewController()
-        let presenter = PaymentsPresenter(view: view, payments: model)
+        let presenter = PaymentsPresenter(view: view, payments: paymentsModelsArray)
         view.presenter = presenter
         return view
     }

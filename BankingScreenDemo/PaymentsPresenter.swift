@@ -9,25 +9,26 @@
 import Foundation
 
 protocol PaymentsViewProtocol: class {
-    func populate(orderNumber: Int)
+    func populate(with payments: [PaymentsModel])
 }
 
 protocol PaymentsViewPresenterProtocol: class {
-    init (view: PaymentsViewProtocol, payments: PaymentsModel)
+    init (view: PaymentsViewProtocol, payments: [PaymentsModel])
     func populateLabels()
 }
 
 class PaymentsPresenter: PaymentsViewPresenterProtocol {
     
     weak var view: PaymentsViewProtocol?
-    let payments: PaymentsModel
+    let payments: [PaymentsModel]
     
-    required init(view: PaymentsViewProtocol, payments: PaymentsModel) {
+    required init(view: PaymentsViewProtocol, payments: [PaymentsModel]) {
         self.view = view
         self.payments = payments
     }
     func populateLabels() {
-        let number = self.payments.orderNumber
-        self.view?.populate(orderNumber: number)
+//        let number = self.payments.orderNumber
+        self.view?.populate(with: payments)
+        
     }
 }

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Bold.ttf">
+            <string>OpenSans-Bold</string>
+        </array>
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans-Regular</string>
+        </array>
+        <array key="OpenSans-SemiBold.ttf">
+            <string>OpenSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PaymentsCell" id="Lpk-6k-wPa" customClass="PaymentsCollectionViewCell" customModule="BankingScreenDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="327" height="428"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Bzs-7P-0fI">
+                <rect key="frame" x="0.0" y="0.0" width="327" height="428"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hnh-7X-cNx">
+                        <rect key="frame" x="0.0" y="362" width="327" height="66"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="57h-qm-Hx1">
+                                <rect key="frame" x="9" y="14" width="309" height="38.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="136" translatesAutoresizingMaskIntoConstraints="NO" id="tPE-2a-FmZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="309" height="15"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Заказчиком оплачено" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Voi-P7-QSQ">
+                                                <rect key="frame" x="0.0" y="0.0" width="119.5" height="15"/>
+                                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="11"/>
+                                                <color key="textColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="700 000 р." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pbC-Bp-fp2">
+                                                <rect key="frame" x="255.5" y="0.0" width="53.5" height="15"/>
+                                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="11"/>
+                                                <color key="textColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="pbC-Bp-fp2" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Voi-P7-QSQ" secondAttribute="trailing" id="sCa-mp-zXt"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="176" translatesAutoresizingMaskIntoConstraints="NO" id="3Sl-pl-LYo">
+                                        <rect key="frame" x="0.0" y="19" width="309" height="19.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="К оплате" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="27U-Q1-Kkx">
+                                                <rect key="frame" x="0.0" y="0.0" width="64.5" height="19.5"/>
+                                                <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="14"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="250 000 р." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h7s-y3-FGo">
+                                                <rect key="frame" x="240.5" y="0.0" width="68.5" height="19.5"/>
+                                                <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="14"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="h7s-y3-FGo" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="27U-Q1-Kkx" secondAttribute="trailing" id="7El-h6-A0X"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.52941176470588236" green="0.39215686274509803" blue="0.85490196078431369" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="57h-qm-Hx1" firstAttribute="centerX" secondItem="hnh-7X-cNx" secondAttribute="centerX" id="AGb-Xb-XNd"/>
+                            <constraint firstItem="57h-qm-Hx1" firstAttribute="centerY" secondItem="hnh-7X-cNx" secondAttribute="centerY" id="Dlr-Fa-wmC"/>
+                            <constraint firstAttribute="height" constant="66" id="dih-Of-T8s"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Заказ №44" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5iZ-Zq-wHM">
+                        <rect key="frame" x="22" y="15" width="56.5" height="15"/>
+                        <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="11"/>
+                        <color key="textColor" red="0.61176470588235299" green="0.62352941176470589" blue="0.6705882352941176" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Оплачено" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EV6-ls-uFK">
+                        <rect key="frame" x="22" y="53.5" width="54.5" height="15"/>
+                        <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="11"/>
+                        <color key="textColor" red="0.61176470589999998" green="0.62352941179999999" blue="0.6705882353" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Выполнено" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CXE-aQ-zrN">
+                        <rect key="frame" x="22" y="69.5" width="62.5" height="15"/>
+                        <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="11"/>
+                        <color key="textColor" red="0.61176470589999998" green="0.62352941179999999" blue="0.6705882353" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="250 000 р." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UGM-J4-fPl">
+                        <rect key="frame" x="254.5" y="53.5" width="53.5" height="15"/>
+                        <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="11"/>
+                        <color key="textColor" red="0.61176470589999998" green="0.62352941179999999" blue="0.6705882353" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="500 000 р." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aYw-rg-BFi">
+                        <rect key="frame" x="254.5" y="69.5" width="53.5" height="15"/>
+                        <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="11"/>
+                        <color key="textColor" red="0.61176470589999998" green="0.62352941179999999" blue="0.6705882353" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Сумма заказа" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PgS-25-RkU">
+                        <rect key="frame" x="22" y="33" width="97.5" height="19.5"/>
+                        <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="14"/>
+                        <color key="textColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 000 000 р." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3jF-Hh-FKr">
+                        <rect key="frame" x="228.5" y="33" width="79.5" height="19.5"/>
+                        <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="14"/>
+                        <color key="textColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="purpleMark" translatesAutoresizingMaskIntoConstraints="NO" id="OWK-jP-sVb">
+                        <rect key="frame" x="297" y="17" width="10" height="10"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="4sQ-Xr-sb5"/>
+                            <constraint firstAttribute="width" constant="10" id="SLs-YT-Ecu"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Состояние на 29.03.20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HB7-sa-uh0">
+                        <rect key="frame" x="161.5" y="15" width="119.5" height="15"/>
+                        <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="11"/>
+                        <color key="textColor" red="0.61176470589999998" green="0.62352941179999999" blue="0.6705882353" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SWn-Ei-HDx">
+                        <rect key="frame" x="0.0" y="99" width="327" height="263"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="HB7-sa-uh0" secondAttribute="trailing" constant="46" id="0Zy-kb-N8f"/>
+                    <constraint firstAttribute="trailing" secondItem="3jF-Hh-FKr" secondAttribute="trailing" constant="19" id="2e4-yz-PQS"/>
+                    <constraint firstItem="UGM-J4-fPl" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="EV6-ls-uFK" secondAttribute="trailing" id="9Ru-Cu-Syu"/>
+                    <constraint firstItem="5iZ-Zq-wHM" firstAttribute="leading" secondItem="Bzs-7P-0fI" secondAttribute="leading" constant="22" id="9oW-Oj-U6P"/>
+                    <constraint firstItem="UGM-J4-fPl" firstAttribute="top" secondItem="3jF-Hh-FKr" secondAttribute="bottom" constant="1" id="9xI-Ac-LIb"/>
+                    <constraint firstItem="CXE-aQ-zrN" firstAttribute="top" secondItem="EV6-ls-uFK" secondAttribute="bottom" constant="1" id="9xS-2x-GsY"/>
+                    <constraint firstAttribute="trailing" secondItem="SWn-Ei-HDx" secondAttribute="trailing" id="EUI-qa-DCw"/>
+                    <constraint firstItem="3jF-Hh-FKr" firstAttribute="top" secondItem="HB7-sa-uh0" secondAttribute="bottom" constant="3" id="G2Q-5E-BHx"/>
+                    <constraint firstItem="aYw-rg-BFi" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="CXE-aQ-zrN" secondAttribute="trailing" id="JNF-o2-f1z"/>
+                    <constraint firstAttribute="trailing" secondItem="OWK-jP-sVb" secondAttribute="trailing" constant="20" id="KHZ-4g-6MR"/>
+                    <constraint firstItem="HB7-sa-uh0" firstAttribute="top" secondItem="Bzs-7P-0fI" secondAttribute="top" constant="15" id="PLU-ca-uNP"/>
+                    <constraint firstAttribute="trailing" secondItem="hnh-7X-cNx" secondAttribute="trailing" id="Rlt-c7-D5p"/>
+                    <constraint firstAttribute="trailing" secondItem="UGM-J4-fPl" secondAttribute="trailing" constant="19" id="SDC-Jc-Pfo"/>
+                    <constraint firstItem="SWn-Ei-HDx" firstAttribute="top" secondItem="CXE-aQ-zrN" secondAttribute="bottom" constant="14.5" id="Sv7-mc-84q"/>
+                    <constraint firstItem="PgS-25-RkU" firstAttribute="leading" secondItem="Bzs-7P-0fI" secondAttribute="leading" constant="22" id="Ufh-Np-69D"/>
+                    <constraint firstItem="5iZ-Zq-wHM" firstAttribute="top" secondItem="Bzs-7P-0fI" secondAttribute="top" constant="15" id="Vyz-3N-aYo"/>
+                    <constraint firstAttribute="bottom" secondItem="hnh-7X-cNx" secondAttribute="bottom" id="aRT-VY-4aU"/>
+                    <constraint firstItem="PgS-25-RkU" firstAttribute="top" secondItem="5iZ-Zq-wHM" secondAttribute="bottom" constant="3" id="cc0-Dx-tw6"/>
+                    <constraint firstItem="EV6-ls-uFK" firstAttribute="leading" secondItem="Bzs-7P-0fI" secondAttribute="leading" constant="22" id="ddb-ya-jxL"/>
+                    <constraint firstAttribute="trailing" secondItem="aYw-rg-BFi" secondAttribute="trailing" constant="19" id="fMp-88-a4W"/>
+                    <constraint firstItem="CXE-aQ-zrN" firstAttribute="leading" secondItem="Bzs-7P-0fI" secondAttribute="leading" constant="22" id="h2Z-NG-d4A"/>
+                    <constraint firstItem="OWK-jP-sVb" firstAttribute="top" secondItem="Bzs-7P-0fI" secondAttribute="top" constant="17" id="iXH-un-KbF"/>
+                    <constraint firstItem="hnh-7X-cNx" firstAttribute="leading" secondItem="Bzs-7P-0fI" secondAttribute="leading" id="k1h-4F-0bV"/>
+                    <constraint firstItem="SWn-Ei-HDx" firstAttribute="leading" secondItem="Bzs-7P-0fI" secondAttribute="leading" id="kRS-pm-4W2"/>
+                    <constraint firstItem="hnh-7X-cNx" firstAttribute="top" secondItem="SWn-Ei-HDx" secondAttribute="bottom" id="oki-A9-VYD"/>
+                    <constraint firstItem="3jF-Hh-FKr" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="PgS-25-RkU" secondAttribute="trailing" id="r6O-Eg-qv2"/>
+                    <constraint firstItem="HB7-sa-uh0" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="5iZ-Zq-wHM" secondAttribute="trailing" constant="13" id="r8h-Th-2KT"/>
+                    <constraint firstItem="EV6-ls-uFK" firstAttribute="top" secondItem="PgS-25-RkU" secondAttribute="bottom" constant="1" id="ueF-0f-kaR"/>
+                    <constraint firstItem="aYw-rg-BFi" firstAttribute="top" secondItem="UGM-J4-fPl" secondAttribute="bottom" constant="1" id="vLt-Am-I9k"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <connections>
+                <outlet property="completed" destination="aYw-rg-BFi" id="cxq-rV-1Vt"/>
+                <outlet property="currentStateDate" destination="HB7-sa-uh0" id="Wzb-Uz-2cG"/>
+                <outlet property="orderNumber" destination="5iZ-Zq-wHM" id="fUl-VN-kaC"/>
+                <outlet property="orderTotal" destination="3jF-Hh-FKr" id="qWw-FN-eMO"/>
+                <outlet property="payed" destination="UGM-J4-fPl" id="oOc-eg-pv4"/>
+                <outlet property="payedByCustomer" destination="pbC-Bp-fp2" id="NFs-SQ-U92"/>
+                <outlet property="toBePayed" destination="h7s-y3-FGo" id="SAL-L2-irU"/>
+            </connections>
+            <point key="canvasLocation" x="126.81159420289856" y="103.79464285714285"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="purpleMark" width="9" height="6"/>
+    </resources>
+</document>

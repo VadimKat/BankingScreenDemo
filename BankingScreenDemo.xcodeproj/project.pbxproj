@@ -17,6 +17,12 @@
 		52FA849F24B1C33D00010F9B /* PaymentsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52FA849D24B1C33D00010F9B /* PaymentsViewController.xib */; };
 		52FA84A124B1C44100010F9B /* PaymentsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FA84A024B1C44100010F9B /* PaymentsModel.swift */; };
 		52FA84A324B1D32B00010F9B /* ModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FA84A224B1D32B00010F9B /* ModuleBuilder.swift */; };
+		52FA84A624B1DB7400010F9B /* PaymentsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FA84A424B1DB7400010F9B /* PaymentsCollectionViewCell.swift */; };
+		52FA84A724B1DB7400010F9B /* PaymentsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52FA84A524B1DB7400010F9B /* PaymentsCell.xib */; };
+		52FA84A924B1E88500010F9B /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52FA84A824B1E88500010F9B /* OpenSans-Bold.ttf */; };
+		52FA84AB24B1E8A000010F9B /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52FA84AA24B1E8A000010F9B /* OpenSans-Regular.ttf */; };
+		52FA84AD24B1E8BF00010F9B /* Ubuntu-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52FA84AC24B1E8BF00010F9B /* Ubuntu-Medium.ttf */; };
+		52FA84AF24B1FD4C00010F9B /* OpenSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52FA84AE24B1FD4C00010F9B /* OpenSans-SemiBold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +38,12 @@
 		52FA849D24B1C33D00010F9B /* PaymentsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentsViewController.xib; sourceTree = "<group>"; };
 		52FA84A024B1C44100010F9B /* PaymentsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentsModel.swift; sourceTree = "<group>"; };
 		52FA84A224B1D32B00010F9B /* ModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilder.swift; sourceTree = "<group>"; };
+		52FA84A424B1DB7400010F9B /* PaymentsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentsCollectionViewCell.swift; sourceTree = "<group>"; };
+		52FA84A524B1DB7400010F9B /* PaymentsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentsCell.xib; sourceTree = "<group>"; };
+		52FA84A824B1E88500010F9B /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		52FA84AA24B1E8A000010F9B /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		52FA84AC24B1E8BF00010F9B /* Ubuntu-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Medium.ttf"; sourceTree = "<group>"; };
+		52FA84AE24B1FD4C00010F9B /* OpenSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,10 +82,16 @@
 				52FA849A24B1C31D00010F9B /* PaymentsPresenter.swift */,
 				52FA849C24B1C33D00010F9B /* PaymentsViewController.swift */,
 				52FA849D24B1C33D00010F9B /* PaymentsViewController.xib */,
+				52FA84A424B1DB7400010F9B /* PaymentsCollectionViewCell.swift */,
+				52FA84A524B1DB7400010F9B /* PaymentsCell.xib */,
 				52FA84A024B1C44100010F9B /* PaymentsModel.swift */,
 				52FA848C24B1A71700010F9B /* Main.storyboard */,
 				52FA848F24B1A71A00010F9B /* Assets.xcassets */,
 				52FA849124B1A71A00010F9B /* LaunchScreen.storyboard */,
+				52FA84A824B1E88500010F9B /* OpenSans-Bold.ttf */,
+				52FA84AA24B1E8A000010F9B /* OpenSans-Regular.ttf */,
+				52FA84AE24B1FD4C00010F9B /* OpenSans-SemiBold.ttf */,
+				52FA84AC24B1E8BF00010F9B /* Ubuntu-Medium.ttf */,
 				52FA849424B1A71A00010F9B /* Info.plist */,
 			);
 			path = BankingScreenDemo;
@@ -137,9 +155,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52FA84A724B1DB7400010F9B /* PaymentsCell.xib in Resources */,
+				52FA84AF24B1FD4C00010F9B /* OpenSans-SemiBold.ttf in Resources */,
 				52FA849324B1A71A00010F9B /* LaunchScreen.storyboard in Resources */,
+				52FA84A924B1E88500010F9B /* OpenSans-Bold.ttf in Resources */,
+				52FA84AB24B1E8A000010F9B /* OpenSans-Regular.ttf in Resources */,
 				52FA849024B1A71A00010F9B /* Assets.xcassets in Resources */,
 				52FA848E24B1A71700010F9B /* Main.storyboard in Resources */,
+				52FA84AD24B1E8BF00010F9B /* Ubuntu-Medium.ttf in Resources */,
 				52FA849F24B1C33D00010F9B /* PaymentsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -152,6 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52FA849B24B1C31D00010F9B /* PaymentsPresenter.swift in Sources */,
+				52FA84A624B1DB7400010F9B /* PaymentsCollectionViewCell.swift in Sources */,
 				52FA848724B1A71700010F9B /* AppDelegate.swift in Sources */,
 				52FA84A124B1C44100010F9B /* PaymentsModel.swift in Sources */,
 				52FA848924B1A71700010F9B /* SceneDelegate.swift in Sources */,
