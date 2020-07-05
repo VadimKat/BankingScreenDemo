@@ -79,22 +79,62 @@
 				52FA848624B1A71700010F9B /* AppDelegate.swift */,
 				52FA848824B1A71700010F9B /* SceneDelegate.swift */,
 				52FA84A224B1D32B00010F9B /* ModuleBuilder.swift */,
-				52FA849A24B1C31D00010F9B /* PaymentsPresenter.swift */,
-				52FA849C24B1C33D00010F9B /* PaymentsViewController.swift */,
-				52FA849D24B1C33D00010F9B /* PaymentsViewController.xib */,
-				52FA84A424B1DB7400010F9B /* PaymentsCollectionViewCell.swift */,
-				52FA84A524B1DB7400010F9B /* PaymentsCell.xib */,
-				52FA84A024B1C44100010F9B /* PaymentsModel.swift */,
+				52FA84B524B20D4900010F9B /* PayementsModule */,
 				52FA848C24B1A71700010F9B /* Main.storyboard */,
 				52FA848F24B1A71A00010F9B /* Assets.xcassets */,
 				52FA849124B1A71A00010F9B /* LaunchScreen.storyboard */,
+				52FA84B024B20D0300010F9B /* Fonts */,
+				52FA849424B1A71A00010F9B /* Info.plist */,
+			);
+			path = BankingScreenDemo;
+			sourceTree = "<group>";
+		};
+		52FA84B024B20D0300010F9B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
 				52FA84A824B1E88500010F9B /* OpenSans-Bold.ttf */,
 				52FA84AA24B1E8A000010F9B /* OpenSans-Regular.ttf */,
 				52FA84AE24B1FD4C00010F9B /* OpenSans-SemiBold.ttf */,
 				52FA84AC24B1E8BF00010F9B /* Ubuntu-Medium.ttf */,
-				52FA849424B1A71A00010F9B /* Info.plist */,
 			);
-			path = BankingScreenDemo;
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		52FA84B124B20D1400010F9B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				52FA84A024B1C44100010F9B /* PaymentsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		52FA84B224B20D2200010F9B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				52FA849C24B1C33D00010F9B /* PaymentsViewController.swift */,
+				52FA849D24B1C33D00010F9B /* PaymentsViewController.xib */,
+				52FA84A424B1DB7400010F9B /* PaymentsCollectionViewCell.swift */,
+				52FA84A524B1DB7400010F9B /* PaymentsCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		52FA84B324B20D2700010F9B /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				52FA849A24B1C31D00010F9B /* PaymentsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		52FA84B524B20D4900010F9B /* PayementsModule */ = {
+			isa = PBXGroup;
+			children = (
+				52FA84B124B20D1400010F9B /* Model */,
+				52FA84B224B20D2200010F9B /* View */,
+				52FA84B324B20D2700010F9B /* Presenter */,
+			);
+			path = PayementsModule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
