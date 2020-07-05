@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		52FA848724B1A71700010F9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FA848624B1A71700010F9B /* AppDelegate.swift */; };
 		52FA848924B1A71700010F9B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FA848824B1A71700010F9B /* SceneDelegate.swift */; };
-		52FA848B24B1A71700010F9B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FA848A24B1A71700010F9B /* ViewController.swift */; };
 		52FA848E24B1A71700010F9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52FA848C24B1A71700010F9B /* Main.storyboard */; };
 		52FA849024B1A71A00010F9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52FA848F24B1A71A00010F9B /* Assets.xcassets */; };
 		52FA849324B1A71A00010F9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52FA849124B1A71A00010F9B /* LaunchScreen.storyboard */; };
+		52FA849B24B1C31D00010F9B /* PaymentsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FA849A24B1C31D00010F9B /* PaymentsPresenter.swift */; };
+		52FA849E24B1C33D00010F9B /* PaymentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FA849C24B1C33D00010F9B /* PaymentsViewController.swift */; };
+		52FA849F24B1C33D00010F9B /* PaymentsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52FA849D24B1C33D00010F9B /* PaymentsViewController.xib */; };
+		52FA84A124B1C44100010F9B /* PaymentsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FA84A024B1C44100010F9B /* PaymentsModel.swift */; };
+		52FA84A324B1D32B00010F9B /* ModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FA84A224B1D32B00010F9B /* ModuleBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		52FA848324B1A71700010F9B /* BankingScreenDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BankingScreenDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52FA848624B1A71700010F9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52FA848824B1A71700010F9B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		52FA848A24B1A71700010F9B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		52FA848D24B1A71700010F9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		52FA848F24B1A71A00010F9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52FA849224B1A71A00010F9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52FA849424B1A71A00010F9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52FA849A24B1C31D00010F9B /* PaymentsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentsPresenter.swift; sourceTree = "<group>"; };
+		52FA849C24B1C33D00010F9B /* PaymentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentsViewController.swift; sourceTree = "<group>"; };
+		52FA849D24B1C33D00010F9B /* PaymentsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentsViewController.xib; sourceTree = "<group>"; };
+		52FA84A024B1C44100010F9B /* PaymentsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentsModel.swift; sourceTree = "<group>"; };
+		52FA84A224B1D32B00010F9B /* ModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +66,11 @@
 			children = (
 				52FA848624B1A71700010F9B /* AppDelegate.swift */,
 				52FA848824B1A71700010F9B /* SceneDelegate.swift */,
-				52FA848A24B1A71700010F9B /* ViewController.swift */,
+				52FA84A224B1D32B00010F9B /* ModuleBuilder.swift */,
+				52FA849A24B1C31D00010F9B /* PaymentsPresenter.swift */,
+				52FA849C24B1C33D00010F9B /* PaymentsViewController.swift */,
+				52FA849D24B1C33D00010F9B /* PaymentsViewController.xib */,
+				52FA84A024B1C44100010F9B /* PaymentsModel.swift */,
 				52FA848C24B1A71700010F9B /* Main.storyboard */,
 				52FA848F24B1A71A00010F9B /* Assets.xcassets */,
 				52FA849124B1A71A00010F9B /* LaunchScreen.storyboard */,
@@ -128,6 +140,7 @@
 				52FA849324B1A71A00010F9B /* LaunchScreen.storyboard in Resources */,
 				52FA849024B1A71A00010F9B /* Assets.xcassets in Resources */,
 				52FA848E24B1A71700010F9B /* Main.storyboard in Resources */,
+				52FA849F24B1C33D00010F9B /* PaymentsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +151,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52FA848B24B1A71700010F9B /* ViewController.swift in Sources */,
+				52FA849B24B1C31D00010F9B /* PaymentsPresenter.swift in Sources */,
 				52FA848724B1A71700010F9B /* AppDelegate.swift in Sources */,
+				52FA84A124B1C44100010F9B /* PaymentsModel.swift in Sources */,
 				52FA848924B1A71700010F9B /* SceneDelegate.swift in Sources */,
+				52FA849E24B1C33D00010F9B /* PaymentsViewController.swift in Sources */,
+				52FA84A324B1D32B00010F9B /* ModuleBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
