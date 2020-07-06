@@ -23,8 +23,8 @@ class PaymentsCollectionViewCell: UICollectionViewCell {
     // MARK: - Properties
     let paymentsCell = "PaymentsCell"
     var originalCellHeight: CGFloat = 164
-    let tableCell = "PaymentsTVCell"
-    var payments: [Payment] = []
+    private let tableCell = "PaymentsTVCell"
+    private var payments: [Payment] = []
 
     
     override func layoutSubviews() {
