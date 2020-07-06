@@ -140,7 +140,19 @@
                     </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SWn-Ei-HDx">
                         <rect key="frame" x="0.0" y="99" width="327" height="263"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Hqu-oB-FtF">
+                                <rect key="frame" x="0.0" y="0.0" width="327" height="263"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Hqu-oB-FtF" firstAttribute="leading" secondItem="SWn-Ei-HDx" secondAttribute="leading" id="36U-vV-zq9"/>
+                            <constraint firstAttribute="bottom" secondItem="Hqu-oB-FtF" secondAttribute="bottom" id="6iN-FL-KAA"/>
+                            <constraint firstItem="Hqu-oB-FtF" firstAttribute="top" secondItem="SWn-Ei-HDx" secondAttribute="top" id="cs2-tp-I21"/>
+                            <constraint firstAttribute="trailing" secondItem="Hqu-oB-FtF" secondAttribute="trailing" id="o0B-1F-QJn"/>
+                        </constraints>
                     </view>
                 </subviews>
                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -183,6 +195,7 @@
                 <outlet property="orderTotal" destination="3jF-Hh-FKr" id="qWw-FN-eMO"/>
                 <outlet property="payed" destination="UGM-J4-fPl" id="oOc-eg-pv4"/>
                 <outlet property="payedByCustomer" destination="pbC-Bp-fp2" id="NFs-SQ-U92"/>
+                <outlet property="tableView" destination="Hqu-oB-FtF" id="KG3-EH-Fl3"/>
                 <outlet property="toBePayed" destination="h7s-y3-FGo" id="SAL-L2-irU"/>
             </connections>
             <point key="canvasLocation" x="126.81159420289856" y="103.79464285714285"/>

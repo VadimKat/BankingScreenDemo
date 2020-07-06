@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans-Regular</string>
+        </array>
+        <array key="OpenSans-SemiBold.ttf">
+            <string>OpenSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PaymentsTVCell" id="wzh-IB-M0Z" customClass="PaymentsTVCell" customModule="BankingScreenDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="64"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wzh-IB-M0Z" id="DpN-G6-Yi7">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="64"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Оплата №1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ymL-Uc-S5S">
+                        <rect key="frame" x="23" y="13" width="65" height="17"/>
+                        <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="12"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100 000 р." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="80G-GX-qCN">
+                        <rect key="frame" x="23" y="33" width="68" height="20"/>
+                        <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Дата оплаты:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x6W-qT-fMg">
+                        <rect key="frame" x="123" y="13" width="77" height="17"/>
+                        <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="12"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30.05.19" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2CO-hG-5UG">
+                        <rect key="frame" x="123" y="33" width="56" height="20"/>
+                        <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NcH-1H-r1a">
+                        <rect key="frame" x="305" y="16" width="86" height="34"/>
+                        <color key="backgroundColor" red="0.58823529411764708" green="0.58823529411764708" blue="0.58823529411764708" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="34" id="Eau-Sn-3lG"/>
+                            <constraint firstAttribute="width" constant="86" id="sqJ-3i-hT8"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="12"/>
+                        <state key="normal" title="Ожидание">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="x6W-qT-fMg" firstAttribute="top" secondItem="DpN-G6-Yi7" secondAttribute="top" constant="13" id="14h-PF-Ki5"/>
+                    <constraint firstItem="80G-GX-qCN" firstAttribute="leading" secondItem="DpN-G6-Yi7" secondAttribute="leading" constant="23" id="8pH-rA-jpQ"/>
+                    <constraint firstItem="ymL-Uc-S5S" firstAttribute="top" secondItem="DpN-G6-Yi7" secondAttribute="top" constant="13" id="9rk-uI-OcR"/>
+                    <constraint firstItem="2CO-hG-5UG" firstAttribute="leading" secondItem="DpN-G6-Yi7" secondAttribute="leading" constant="123" id="GIz-ut-RUm"/>
+                    <constraint firstItem="2CO-hG-5UG" firstAttribute="top" secondItem="x6W-qT-fMg" secondAttribute="bottom" constant="3" id="HLN-hh-HRM"/>
+                    <constraint firstItem="80G-GX-qCN" firstAttribute="top" secondItem="ymL-Uc-S5S" secondAttribute="bottom" constant="3" id="PgM-io-rf0"/>
+                    <constraint firstItem="ymL-Uc-S5S" firstAttribute="leading" secondItem="DpN-G6-Yi7" secondAttribute="leading" constant="23" id="gh5-x7-9FK"/>
+                    <constraint firstAttribute="trailing" secondItem="NcH-1H-r1a" secondAttribute="trailing" constant="23" id="mfz-Oi-EnB"/>
+                    <constraint firstItem="x6W-qT-fMg" firstAttribute="leading" secondItem="DpN-G6-Yi7" secondAttribute="leading" constant="123" id="o92-4T-5xY"/>
+                    <constraint firstItem="NcH-1H-r1a" firstAttribute="top" secondItem="DpN-G6-Yi7" secondAttribute="top" constant="16" id="oUs-CK-4SF"/>
+                </constraints>
+            </tableViewCellContentView>
+            <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="paymentDate" destination="2CO-hG-5UG" id="UuS-xg-A3B"/>
+                <outlet property="paymentNumber" destination="ymL-Uc-S5S" id="p8u-1L-pYa"/>
+                <outlet property="paymentTotal" destination="80G-GX-qCN" id="vKP-XZ-HuK"/>
+                <outlet property="statusButton" destination="NcH-1H-r1a" id="GbB-sL-RZk"/>
+            </connections>
+            <point key="canvasLocation" x="154" y="114"/>
+        </tableViewCell>
+    </objects>
+</document>

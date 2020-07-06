@@ -23,6 +23,10 @@
 		52FA84AB24B1E8A000010F9B /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52FA84AA24B1E8A000010F9B /* OpenSans-Regular.ttf */; };
 		52FA84AD24B1E8BF00010F9B /* Ubuntu-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52FA84AC24B1E8BF00010F9B /* Ubuntu-Medium.ttf */; };
 		52FA84AF24B1FD4C00010F9B /* OpenSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52FA84AE24B1FD4C00010F9B /* OpenSans-SemiBold.ttf */; };
+		52FA84BD24B21CEC00010F9B /* PaymentsTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52FA84BC24B21CEC00010F9B /* PaymentsTVCell.xib */; };
+		52FA84BF24B22CD300010F9B /* PaymentsTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FA84BE24B22CD300010F9B /* PaymentsTVCell.swift */; };
+		52FA84C124B2306300010F9B /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FA84C024B2306300010F9B /* DateHelper.swift */; };
+		52FA84C324B23EA600010F9B /* BorderHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FA84C224B23EA600010F9B /* BorderHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +48,10 @@
 		52FA84AA24B1E8A000010F9B /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 		52FA84AC24B1E8BF00010F9B /* Ubuntu-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Medium.ttf"; sourceTree = "<group>"; };
 		52FA84AE24B1FD4C00010F9B /* OpenSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		52FA84BC24B21CEC00010F9B /* PaymentsTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentsTVCell.xib; sourceTree = "<group>"; };
+		52FA84BE24B22CD300010F9B /* PaymentsTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentsTVCell.swift; sourceTree = "<group>"; };
+		52FA84C024B2306300010F9B /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
+		52FA84C224B23EA600010F9B /* BorderHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +91,8 @@
 				52FA848C24B1A71700010F9B /* Main.storyboard */,
 				52FA848F24B1A71A00010F9B /* Assets.xcassets */,
 				52FA849124B1A71A00010F9B /* LaunchScreen.storyboard */,
+				52FA84C024B2306300010F9B /* DateHelper.swift */,
+				52FA84C224B23EA600010F9B /* BorderHelper.swift */,
 				52FA84B024B20D0300010F9B /* Fonts */,
 				52FA849424B1A71A00010F9B /* Info.plist */,
 			);
@@ -115,6 +125,8 @@
 				52FA849D24B1C33D00010F9B /* PaymentsViewController.xib */,
 				52FA84A424B1DB7400010F9B /* PaymentsCollectionViewCell.swift */,
 				52FA84A524B1DB7400010F9B /* PaymentsCell.xib */,
+				52FA84BC24B21CEC00010F9B /* PaymentsTVCell.xib */,
+				52FA84BE24B22CD300010F9B /* PaymentsTVCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -199,6 +211,7 @@
 				52FA84AF24B1FD4C00010F9B /* OpenSans-SemiBold.ttf in Resources */,
 				52FA849324B1A71A00010F9B /* LaunchScreen.storyboard in Resources */,
 				52FA84A924B1E88500010F9B /* OpenSans-Bold.ttf in Resources */,
+				52FA84BD24B21CEC00010F9B /* PaymentsTVCell.xib in Resources */,
 				52FA84AB24B1E8A000010F9B /* OpenSans-Regular.ttf in Resources */,
 				52FA849024B1A71A00010F9B /* Assets.xcassets in Resources */,
 				52FA848E24B1A71700010F9B /* Main.storyboard in Resources */,
@@ -216,9 +229,12 @@
 			files = (
 				52FA849B24B1C31D00010F9B /* PaymentsPresenter.swift in Sources */,
 				52FA84A624B1DB7400010F9B /* PaymentsCollectionViewCell.swift in Sources */,
+				52FA84BF24B22CD300010F9B /* PaymentsTVCell.swift in Sources */,
 				52FA848724B1A71700010F9B /* AppDelegate.swift in Sources */,
 				52FA84A124B1C44100010F9B /* PaymentsModel.swift in Sources */,
 				52FA848924B1A71700010F9B /* SceneDelegate.swift in Sources */,
+				52FA84C324B23EA600010F9B /* BorderHelper.swift in Sources */,
+				52FA84C124B2306300010F9B /* DateHelper.swift in Sources */,
 				52FA849E24B1C33D00010F9B /* PaymentsViewController.swift in Sources */,
 				52FA84A324B1D32B00010F9B /* ModuleBuilder.swift in Sources */,
 			);

@@ -21,65 +21,60 @@ class PaymentsCollectionViewCell: UICollectionViewCell {
 
     let paymentsCell = "PaymentsCell"
     var originalCellHeight: CGFloat = 164
+    
+    @IBOutlet weak var tableView: UITableView!
+    
+    let tableCell = "PaymentsTVCell"
+    
+    var payments: [Payment] = []
 
     override func layoutSubviews() {
+        super.layoutSubviews()
         layer.cornerRadius = 20
         layer.masksToBounds = true
         backgroundColor = .white
+        
+        tableView.dataSource = self
+        tableView.delegate = self
+        tableView.tableFooterView = UIView()
+//        tableView.addBorderTop(size: 0.6, color: #colorLiteral(red: 0.7764705882, green: 0.7764705882, blue: 0.7843137255, alpha: 1))
+        
 
+        let cellNib = UINib(nibName: tableCell, bundle: nil)
+         tableView.register(cellNib, forCellReuseIdentifier: tableCell)
     }
     
     func configure(result: PaymentsModel) {
         orderNumber.text = "Заказ №\(result.orderNumber)"
         
-        let dateFormatter = DateFormatter()
-        dateFormatter.locale = Locale(identifier: "rus_RUS")
-        dateFormatter.setLocalizedDateFormatFromTemplate("dd.MM.yy")
-        currentStateDate.text = "Состояние на \(dateFormatter.string(from: result.currentStateDate))"
-        
+        currentStateDate.text = "Состояние на \(setDate(date: result.currentStateDate))"
         orderTotal.text = "\(result.orderTotal) р."
         payed.text = "\(result.payed) р."
         completed.text = "\(result.completed) р."
         payedByCustomer.text = "\(result.payedByCustomer) р."
         toBePayed.text = "\(result.toBePayed) р."
+        payments = result.payments
         
     }
-
-//    override init(frame: CGRect) {
-//           super.init(frame: frame)
-//        setupViews()
-//
-//    }
-//
-//    required init?(coder: NSCoder) {
-//        fatalError("init(coder:) has not been implemented")
-//    }
-
-//    let purpleView: UIView = {
-//        let view = UIView()
-//        view.translatesAutoresizingMaskIntoConstraints = false
-//        view.backgroundColor = #colorLiteral(red: 0.5294117647, green: 0.3921568627, blue: 0.8549019608, alpha: 1)
-//        view.frame = CGRect.zero
-//        return view
-//    }()
-
-//    var purpleViewBotomConst = NSLayoutConstraint()
-//       var purpleViewHight = NSLayoutConstraint()
-//       var pupleViewLeading = NSLayoutConstraint()
-//       var pupleViewTrailing = NSLayoutConstraint()
-//
-//    func setupViews () {
-//    addSubview(purpleView)
-//       purpleViewBotomConst = purpleView.bottomAnchor.constraint(equalTo: bottomAnchor)
-//        pupleViewLeading = purpleView.leadingAnchor.constraint(equalTo:leadingAnchor)
-//        pupleViewTrailing = purpleView.trailingAnchor.constraint(equalTo: trailingAnchor)
-//        purpleViewHight = purpleView.heightAnchor.constraint(equalToConstant: 66)
-//        let constraints = [
-//            purpleViewBotomConst, pupleViewLeading, purpleViewHight, pupleViewTrailing]
-//        NSLayoutConstraint.activate(constraints)
-//
-//    }
-
-
-
 }
+
+extension PaymentsCollectionViewCell: UITableViewDataSource, UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return payments.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: tableCell, for: indexPath) as! PaymentsTVCell
+//        cell.textLabel?.text = "\(payments[indexPath.row].paymentNumber)"
+        cell.configureTable(result: payments[indexPath.row])
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+           return 64
+       }
+}
+
+
+

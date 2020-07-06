@@ -11,16 +11,17 @@ import Foundation
 struct PaymentsModel {
     var orderNumber: Int
     var currentStateDate: Date
-    var orderTotal: Double
-    var payed: Double
-    var completed: Double
-    var payedByCustomer: Double
-    var toBePayed: Double
+    var orderTotal: Int
+    var payed: Int
+    var completed: Int
+    var payedByCustomer: Int
+    var toBePayed: Int
     var payments: [Payment]
 }
 
 struct Payment {
     var paymentNumber: Int
+    var paymentTotal: Int
     var paymentDate: Date
     var paymentCompletion: Bool
 }

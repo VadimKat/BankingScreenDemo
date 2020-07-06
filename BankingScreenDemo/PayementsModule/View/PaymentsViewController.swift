@@ -23,7 +23,14 @@ class PaymentsViewController: UIViewController {
 //        collectionView.register(PaymentsCollectionViewCell.self, forCellWithReuseIdentifier: customCell.cellID)
 
         self.presenter.populateLabels()
+        
+        UIGraphicsBeginImageContext(self.view.frame.size)
+        UIImage(named: "back")?.draw(in: self.view.bounds)
+        let image: UIImage = UIGraphicsGetImageFromCurrentImageContext()!
+        UIGraphicsEndImageContext()
+        self.view.backgroundColor = UIColor(patternImage: image)
     }
+    
 }
 
 extension PaymentsViewController: PaymentsViewProtocol {

@@ -6,6 +6,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-Medium.ttf">
+            <string>Ubuntu-Medium</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PaymentsViewController" customModule="BankingScreenDemo" customModuleProvider="target">
             <connections>
@@ -32,11 +37,25 @@
                         <outlet property="delegate" destination="-1" id="22i-DR-gCh"/>
                     </connections>
                 </collectionView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2r7-TA-TPt">
+                    <rect key="frame" x="24" y="52" width="24" height="22"/>
+                    <state key="normal" image="Arrow 5"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Список оплат" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8wd-kK-L7T">
+                    <rect key="frame" x="151.5" y="54" width="111" height="20"/>
+                    <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
+                <constraint firstItem="uHd-Yx-MLC" firstAttribute="top" secondItem="2r7-TA-TPt" secondAttribute="bottom" constant="20" id="3PM-wZ-aK2"/>
                 <constraint firstItem="uHd-Yx-MLC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="8Ta-ww-PPQ"/>
+                <constraint firstItem="uHd-Yx-MLC" firstAttribute="top" secondItem="8wd-kK-L7T" secondAttribute="bottom" constant="20" id="TC4-YC-26x"/>
                 <constraint firstItem="uHd-Yx-MLC" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="V58-d6-4D2"/>
+                <constraint firstItem="2r7-TA-TPt" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="XI5-9f-GPo"/>
+                <constraint firstItem="8wd-kK-L7T" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ett-GO-hq7"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="uHd-Yx-MLC" secondAttribute="trailing" id="pkK-oi-dOk"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="uHd-Yx-MLC" secondAttribute="bottom" id="szR-UL-5If"/>
             </constraints>
@@ -44,4 +63,7 @@
             <point key="canvasLocation" x="139" y="145"/>
         </view>
     </objects>
+    <resources>
+        <image name="Arrow 5" width="24" height="15"/>
+    </resources>
 </document>
