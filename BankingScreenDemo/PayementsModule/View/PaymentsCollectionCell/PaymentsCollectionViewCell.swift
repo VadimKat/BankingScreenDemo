@@ -10,6 +10,7 @@ import UIKit
 
 class PaymentsCollectionViewCell: UICollectionViewCell {
     
+    // MARK: - IBOutlets
     @IBOutlet weak var orderNumber: UILabel!
     @IBOutlet weak var currentStateDate: UILabel!
     @IBOutlet weak var orderTotal: UILabel!
@@ -17,32 +18,38 @@ class PaymentsCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var completed: UILabel!
     @IBOutlet weak var payedByCustomer: UILabel!
     @IBOutlet weak var toBePayed: UILabel!
-//    @IBOutlet weak var a:UILabel!
+    @IBOutlet weak var tableView: UITableView!
 
+    // MARK: - Properties
     let paymentsCell = "PaymentsCell"
     var originalCellHeight: CGFloat = 164
-    
-    @IBOutlet weak var tableView: UITableView!
-    
     let tableCell = "PaymentsTVCell"
-    
     var payments: [Payment] = []
 
+    
     override func layoutSubviews() {
         super.layoutSubviews()
-        layer.cornerRadius = 20
+        // CollectionViewCell design
+        layer.cornerRadius = 15
         layer.masksToBounds = true
         backgroundColor = .white
         
+        // TableView
         tableView.dataSource = self
         tableView.delegate = self
         tableView.tableFooterView = UIView()
-//        tableView.addBorderTop(size: 0.6, color: #colorLiteral(red: 0.7764705882, green: 0.7764705882, blue: 0.7843137255, alpha: 1))
         
-
+        // Register TableView cell
         let cellNib = UINib(nibName: tableCell, bundle: nil)
          tableView.register(cellNib, forCellReuseIdentifier: tableCell)
+        
+        // Draw a line above TableView
+        let point1 = CGPoint(x: 0, y: 98)
+        let point2 = CGPoint(x: tableView.frame.width, y: 98)
+        drawLineFromPoint(start: point1, toPoint: point2, ofColor: #colorLiteral(red: 0.7764705882, green: 0.7764705882, blue: 0.7843137255, alpha: 1), inView: self)
     }
+    
+  
     
     func configure(result: PaymentsModel) {
         orderNumber.text = "Заказ №\(result.orderNumber)"
@@ -66,7 +73,6 @@ extension PaymentsCollectionViewCell: UITableViewDataSource, UITableViewDelegate
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: tableCell, for: indexPath) as! PaymentsTVCell
-//        cell.textLabel?.text = "\(payments[indexPath.row].paymentNumber)"
         cell.configureTable(result: payments[indexPath.row])
         return cell
     }

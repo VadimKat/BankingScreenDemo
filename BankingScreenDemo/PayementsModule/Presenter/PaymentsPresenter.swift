@@ -26,9 +26,8 @@ class PaymentsPresenter: PaymentsViewPresenterProtocol {
         self.view = view
         self.payments = payments
     }
+    
     func populateLabels() {
-//        let number = self.payments.orderNumber
         self.view?.populate(with: payments)
-        
     }
 }

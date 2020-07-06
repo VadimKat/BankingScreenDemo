@@ -17,7 +17,6 @@
 		52FA849F24B1C33D00010F9B /* PaymentsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52FA849D24B1C33D00010F9B /* PaymentsViewController.xib */; };
 		52FA84A124B1C44100010F9B /* PaymentsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FA84A024B1C44100010F9B /* PaymentsModel.swift */; };
 		52FA84A324B1D32B00010F9B /* ModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FA84A224B1D32B00010F9B /* ModuleBuilder.swift */; };
-		52FA84A624B1DB7400010F9B /* PaymentsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FA84A424B1DB7400010F9B /* PaymentsCollectionViewCell.swift */; };
 		52FA84A724B1DB7400010F9B /* PaymentsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52FA84A524B1DB7400010F9B /* PaymentsCell.xib */; };
 		52FA84A924B1E88500010F9B /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52FA84A824B1E88500010F9B /* OpenSans-Bold.ttf */; };
 		52FA84AB24B1E8A000010F9B /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52FA84AA24B1E8A000010F9B /* OpenSans-Regular.ttf */; };
@@ -26,7 +25,8 @@
 		52FA84BD24B21CEC00010F9B /* PaymentsTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52FA84BC24B21CEC00010F9B /* PaymentsTVCell.xib */; };
 		52FA84BF24B22CD300010F9B /* PaymentsTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FA84BE24B22CD300010F9B /* PaymentsTVCell.swift */; };
 		52FA84C124B2306300010F9B /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FA84C024B2306300010F9B /* DateHelper.swift */; };
-		52FA84C324B23EA600010F9B /* BorderHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FA84C224B23EA600010F9B /* BorderHelper.swift */; };
+		52FA84C524B2FE6200010F9B /* LineDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FA84C424B2FE6200010F9B /* LineDrawer.swift */; };
+		52FA84CF24B301DD00010F9B /* PaymentsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FA84CE24B301DD00010F9B /* PaymentsCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,7 +42,6 @@
 		52FA849D24B1C33D00010F9B /* PaymentsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentsViewController.xib; sourceTree = "<group>"; };
 		52FA84A024B1C44100010F9B /* PaymentsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentsModel.swift; sourceTree = "<group>"; };
 		52FA84A224B1D32B00010F9B /* ModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilder.swift; sourceTree = "<group>"; };
-		52FA84A424B1DB7400010F9B /* PaymentsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentsCollectionViewCell.swift; sourceTree = "<group>"; };
 		52FA84A524B1DB7400010F9B /* PaymentsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentsCell.xib; sourceTree = "<group>"; };
 		52FA84A824B1E88500010F9B /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
 		52FA84AA24B1E8A000010F9B /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
@@ -51,7 +50,8 @@
 		52FA84BC24B21CEC00010F9B /* PaymentsTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentsTVCell.xib; sourceTree = "<group>"; };
 		52FA84BE24B22CD300010F9B /* PaymentsTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentsTVCell.swift; sourceTree = "<group>"; };
 		52FA84C024B2306300010F9B /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
-		52FA84C224B23EA600010F9B /* BorderHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderHelper.swift; sourceTree = "<group>"; };
+		52FA84C424B2FE6200010F9B /* LineDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineDrawer.swift; sourceTree = "<group>"; };
+		52FA84CE24B301DD00010F9B /* PaymentsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentsCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,17 +84,9 @@
 		52FA848524B1A71700010F9B /* BankingScreenDemo */ = {
 			isa = PBXGroup;
 			children = (
-				52FA848624B1A71700010F9B /* AppDelegate.swift */,
-				52FA848824B1A71700010F9B /* SceneDelegate.swift */,
-				52FA84A224B1D32B00010F9B /* ModuleBuilder.swift */,
+				52FA84CB24B3004000010F9B /* Builders */,
 				52FA84B524B20D4900010F9B /* PayementsModule */,
-				52FA848C24B1A71700010F9B /* Main.storyboard */,
-				52FA848F24B1A71A00010F9B /* Assets.xcassets */,
-				52FA849124B1A71A00010F9B /* LaunchScreen.storyboard */,
-				52FA84C024B2306300010F9B /* DateHelper.swift */,
-				52FA84C224B23EA600010F9B /* BorderHelper.swift */,
-				52FA84B024B20D0300010F9B /* Fonts */,
-				52FA849424B1A71A00010F9B /* Info.plist */,
+				52FA84CA24B3002A00010F9B /* Support Files */,
 			);
 			path = BankingScreenDemo;
 			sourceTree = "<group>";
@@ -121,12 +113,9 @@
 		52FA84B224B20D2200010F9B /* View */ = {
 			isa = PBXGroup;
 			children = (
-				52FA849C24B1C33D00010F9B /* PaymentsViewController.swift */,
-				52FA849D24B1C33D00010F9B /* PaymentsViewController.xib */,
-				52FA84A424B1DB7400010F9B /* PaymentsCollectionViewCell.swift */,
-				52FA84A524B1DB7400010F9B /* PaymentsCell.xib */,
-				52FA84BC24B21CEC00010F9B /* PaymentsTVCell.xib */,
-				52FA84BE24B22CD300010F9B /* PaymentsTVCell.swift */,
+				52FA84C624B2FF7F00010F9B /* PaymentsVC */,
+				52FA84C724B2FF9500010F9B /* PaymentsCollectionCell */,
+				52FA84C824B2FFC400010F9B /* PaymentsTableCell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -147,6 +136,65 @@
 				52FA84B324B20D2700010F9B /* Presenter */,
 			);
 			path = PayementsModule;
+			sourceTree = "<group>";
+		};
+		52FA84C624B2FF7F00010F9B /* PaymentsVC */ = {
+			isa = PBXGroup;
+			children = (
+				52FA849C24B1C33D00010F9B /* PaymentsViewController.swift */,
+				52FA849D24B1C33D00010F9B /* PaymentsViewController.xib */,
+			);
+			path = PaymentsVC;
+			sourceTree = "<group>";
+		};
+		52FA84C724B2FF9500010F9B /* PaymentsCollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				52FA84CE24B301DD00010F9B /* PaymentsCollectionViewCell.swift */,
+				52FA84A524B1DB7400010F9B /* PaymentsCell.xib */,
+			);
+			path = PaymentsCollectionCell;
+			sourceTree = "<group>";
+		};
+		52FA84C824B2FFC400010F9B /* PaymentsTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				52FA84BC24B21CEC00010F9B /* PaymentsTVCell.xib */,
+				52FA84BE24B22CD300010F9B /* PaymentsTVCell.swift */,
+			);
+			path = PaymentsTableCell;
+			sourceTree = "<group>";
+		};
+		52FA84C924B3000200010F9B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				52FA84C024B2306300010F9B /* DateHelper.swift */,
+				52FA84C424B2FE6200010F9B /* LineDrawer.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		52FA84CA24B3002A00010F9B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				52FA848624B1A71700010F9B /* AppDelegate.swift */,
+				52FA848824B1A71700010F9B /* SceneDelegate.swift */,
+				52FA849424B1A71A00010F9B /* Info.plist */,
+				52FA848F24B1A71A00010F9B /* Assets.xcassets */,
+				52FA848C24B1A71700010F9B /* Main.storyboard */,
+				52FA849124B1A71A00010F9B /* LaunchScreen.storyboard */,
+				52FA84C924B3000200010F9B /* Helpers */,
+				52FA84B024B20D0300010F9B /* Fonts */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		52FA84CB24B3004000010F9B /* Builders */ = {
+			isa = PBXGroup;
+			children = (
+				52FA84A224B1D32B00010F9B /* ModuleBuilder.swift */,
+			);
+			path = Builders;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,13 +275,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52FA84C524B2FE6200010F9B /* LineDrawer.swift in Sources */,
 				52FA849B24B1C31D00010F9B /* PaymentsPresenter.swift in Sources */,
-				52FA84A624B1DB7400010F9B /* PaymentsCollectionViewCell.swift in Sources */,
+				52FA84CF24B301DD00010F9B /* PaymentsCollectionViewCell.swift in Sources */,
 				52FA84BF24B22CD300010F9B /* PaymentsTVCell.swift in Sources */,
 				52FA848724B1A71700010F9B /* AppDelegate.swift in Sources */,
 				52FA84A124B1C44100010F9B /* PaymentsModel.swift in Sources */,
 				52FA848924B1A71700010F9B /* SceneDelegate.swift in Sources */,
-				52FA84C324B23EA600010F9B /* BorderHelper.swift in Sources */,
 				52FA84C124B2306300010F9B /* DateHelper.swift in Sources */,
 				52FA849E24B1C33D00010F9B /* PaymentsViewController.swift in Sources */,
 				52FA84A324B1D32B00010F9B /* ModuleBuilder.swift in Sources */,
@@ -382,7 +430,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D83JQSBRML;
-				INFOPLIST_FILE = BankingScreenDemo/Info.plist;
+				INFOPLIST_FILE = "BankingScreenDemo/Support Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -400,7 +448,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D83JQSBRML;
-				INFOPLIST_FILE = BankingScreenDemo/Info.plist;
+				INFOPLIST_FILE = "BankingScreenDemo/Support Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
